@@ -2,7 +2,7 @@ trigger:
 - '*'
 
 pool:
-  vmImage: ubuntu-latest
+  name: Default
 
 variables:
   buildConfiguration: 'Release'
@@ -41,4 +41,3 @@ steps:
     command: 'build'
     arguments: '--no-restore --configuration Release'
     projects: '**/*.csproj'
-    
